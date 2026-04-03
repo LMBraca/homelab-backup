@@ -1,0 +1,15 @@
+services:
+  glances:
+    image: nicolargo/glances:latest-full
+    container_name: glances
+    restart: unless-stopped
+    pid: host
+    privileged: true
+    environment:
+      - GLANCES_OPT=-w
+    ports:
+      # bind to all interfaces; we will firewall to tailscale0 only
+      - "61208:61208"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/localtime:/etc/localtime:ro
