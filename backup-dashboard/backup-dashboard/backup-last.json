@@ -1,0 +1,11 @@
+{
+  "result": "success",
+  "finishedAt": "2026-04-03 08:32:39",
+  "finishedAtEpoch": 1775230359,
+  "durationSeconds": 21,
+  "errorLine": "",
+  "dbDest": "/home/luis/nextcloud-backup/database/20260403-083237",
+  "dbSize": "26M",
+  "noisyAppdataPreview": 0,
+  "noisyAppdataOther": 0
+}
