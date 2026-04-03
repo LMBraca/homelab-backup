@@ -1,0 +1,14 @@
+# Nextcloud backup data — never commit, 50GB+
+data/
+config/
+database/
+
+# Runtime files
+backup-dashboard/backup-live.json
+*.log
+
+# Secrets
+.env
+
+# macOS
+.DS_Store
