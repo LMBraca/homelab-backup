@@ -1,0 +1,15 @@
+[Unit]
+Description=Backup Dashboard Server
+After=network.target
+
+[Service]
+Type=simple
+User=luis
+WorkingDirectory=/home/luis/backup-dashboard
+ExecStartPre=/bin/bash -c 'pip install flask flask-cors --quiet 2>/dev/null || true'
+ExecStart=/usr/bin/python3 /home/luis/backup-dashboard/server.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

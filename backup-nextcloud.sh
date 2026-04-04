@@ -3,7 +3,7 @@ set -euo pipefail
 
 MAIN_SERVER="luis@100.87.156.88"
 
-BACKUP_DIR="/home/luis/nextcloud-backup"
+BACKUP_DIR="/opt/homelab-backup/"
 LOG_FILE="/home/luis/backup.log"
 
 STATUS_DIR="/home/luis/backup-dashboard"
